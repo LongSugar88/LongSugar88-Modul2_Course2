@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class FriedDoughTest {
+public class MaterialTest {
     public static void main(String[] args) {
         ArrayList<Material> myMaterial = new ArrayList<>();
 
