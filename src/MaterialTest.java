@@ -28,15 +28,15 @@ public class MaterialTest {
         myMaterial.add(meet5);
 
         double amountPriceAfterDiscount = 0;
-        for( int i=0; i<myMaterial.size(); i++){
-            if( myMaterial.get(i) instanceof Meet){
-                Meet myMeet = (Meet) myMaterial.get(i);
+        for( Material element: myMaterial){
+            if( element instanceof Meet){
+                Meet myMeet = (Meet) element;
                 double discount = myMeet.discount(0.1);
                 double sale = myMeet.saleExpDate();
                 amountPriceAfterDiscount+= myMeet.amountPrice()*(1-discount)*(1-sale);
             }
-            else if( myMaterial.get(i) instanceof FriedDough){
-                FriedDough myDough = (FriedDough) myMaterial.get(i);
+            else if( element instanceof FriedDough){
+                FriedDough myDough = (FriedDough) element;
                 double discount = myDough.discount(0.05);
                 double sale = myDough.saleExpDate();
                 amountPriceAfterDiscount+= myDough.amountPrice()*(1-discount)*(1-sale);
