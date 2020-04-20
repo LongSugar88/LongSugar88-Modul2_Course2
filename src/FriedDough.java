@@ -1,6 +1,6 @@
 import java.util.Calendar;
 
-public class FriedDough extends Material implements SallOff{
+public class FriedDough extends Material  implements SallOff {
     private int quantity;
     Calendar cal = Calendar.getInstance();
     public FriedDough(){

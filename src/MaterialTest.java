@@ -45,8 +45,8 @@ public class MaterialTest {
         System.out.println("Sale price: "+ amountPriceAfterDiscount);
 
         double amountPrice = 0;
-        for( int i=0; i<myMaterial.size(); i++){
-            amountPrice+= myMaterial.get(i).amountPrice();
+        for( Material element: myMaterial){
+            amountPrice+= element.amountPrice();
         }
         System.out.println("Price: "+ amountPrice);
 
